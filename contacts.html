@@ -24,6 +24,8 @@
 
   <!--====>> Index CSS <<====-->
   <link href="css/index.css" type="text/css" rel="stylesheet" />
+  <link href="css/custom.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body class="contacts">
@@ -68,18 +70,20 @@
     </div>
 
 
-    <div class="quickLinks-desc" data-to-quick='1'>
+<!-- Contacts section google map iframe settings -->
+    <div class="quickLinks-desc map-container" data-to-quick='1'>
       <!-- Google Map Copied Code -->
-      <iframe
+      <iframe id="top-map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.751139484219!2d-78.5730034487917!3d35.83058108006243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5963e277cf01%3A0x5c81c64cfac0e2cf!2s3922%20Buffaloe%20Rd%2C%20Raleigh%2C%20NC%2027604!5e0!3m2!1sen!2sus!4v1596736692428!5m2!1sen!2sus"
-        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
 
+        <!-- width="440" height="310" -->
 
-      <div class="map-block" id="quick-map" data-lng='-78.5729981' data-lat='35.8305811' data-zoom='15'
+      <!-- <div class="map-block" id="quick-map" data-lng='-78.5729981' data-lat='35.8305811' data-zoom='15'
         data-map-icon="./img/map-marker.svg">
 
-      </div>
+      </div> -->
 
     </div>
     <div class="quickLinks-desc" data-to-quick='2'>
@@ -340,13 +344,22 @@
   <!-- End page name -->
   <main class="main-container">
     <!-- Begin contacts -->
-    <section class="contact-container pt-60 pb-60 pt-xs-30 pb-xs-30 pt-md-60 pb-md-60 r-cloud">
+    <section class="colorme contact-container pt-60 pb-60 pt-xs-30 pb-xs-30 pt-md-60 pb-md-60 r-cloud">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 mb-xs-50 mb-md-60">
-            <div class="map-block" id="contact-map" data-lng='-78.5729981' data-lat='35.8305811' data-zoom='15'
-              data-map-icon="./img/map-marker.svg"></div>
+          <div class="col-lg-6 mb-xs-50 mb-md-60 map-container">
+            <!-- MAP BLOCK -->
+            
+            <!-- <div class="map-block" id="contact-map" data-lng='-78.5729981' data-lat='35.8305811' data-zoom='15'
+              data-map-icon="./img/map-marker.svg"></div> -->
+
+
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6469.502285495758!2d-78.570809!3d35.830581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5963e277cf01%3A0x5c81c64cfac0e2cf!2s3922%20Buffaloe%20Rd%2C%20Raleigh%2C%20NC%2027604!5e0!3m2!1sen!2sus!4v1597860069711!5m2!1sen!2sus"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
           </div>
+
+          
+
           <div class="col-lg-6 mb-xs-20 mb-md-60">
             <h2>Get In Touch</h2>
             <p class="mb-xs-10 mb-lg-20">Each year, we have many fun ChildIt Family events scheduled simultaneously in
